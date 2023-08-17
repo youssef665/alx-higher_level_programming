@@ -2,6 +2,7 @@
 
 from magic_calculation_102 import add, sub
 
+
 def magic_calculation(a, b):
     if a < b:
         n = add(a, b)
@@ -10,4 +11,3 @@ def magic_calculation(a, b):
         return (n)
     else:
         return(sub(a, b))
-
