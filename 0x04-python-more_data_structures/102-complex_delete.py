@@ -5,7 +5,7 @@ def complex_delete(a_dictionary, value):
 
     for v in li:
 
-        if v == a_dictionary.get(v):
+        if value == a_dictionary.get(v):
 
             del a_dictionary[v]
 
