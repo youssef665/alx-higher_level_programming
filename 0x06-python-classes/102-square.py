@@ -21,6 +21,7 @@ class Square:
             raise TypeError("size must be an integer")
 
         elif value < 0:
+
             raise ValueError("size must be >= 0")
 
         self.__size = value
@@ -45,10 +46,10 @@ class Square:
 
         return self.area() <= other.area()
 
-     def __ge__(self, other):
+    def __gt__(self, other):
 
-        return self.area() >= other.area()
+        return self.area() > other.area()
 
-     def __gt__(self, other):
+    def __ge__(self, other):
 
         return self.area() >= other.area()
