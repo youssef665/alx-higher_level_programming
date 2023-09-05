@@ -4,7 +4,7 @@
 
 
 def __init__(self, width=0, height=0):
-        self.width = width
+    self.width = width
 
     @property
     def width(self):
@@ -27,6 +27,8 @@ def __init__(self, width=0, height=0):
     def height(self, value):
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
+
         if value < 0:
             raise ValueError("height must be >= 0")
+
         self.__height = value
