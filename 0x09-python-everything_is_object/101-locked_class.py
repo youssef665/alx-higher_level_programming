@@ -4,8 +4,9 @@
 
 
 class LockedClass:
+
     """
-    Prevents the user from creating new instance 
+    Prevents the user from creating new instance
 
     Attributes:
         first_name (str): first name
@@ -15,6 +16,5 @@ class LockedClass:
 
     def __init__(self):
         """Creates new instances """
-
 
         self.first_name = "first_name"
