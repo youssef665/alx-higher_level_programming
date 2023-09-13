@@ -11,7 +11,8 @@ def append_after(filename="", search_string="", new_string=""):
         new_string (str): The string to add
     """
 
-    text = ""
+
+    t = ""
 
     with open(filename) as s:
         for l in s:
