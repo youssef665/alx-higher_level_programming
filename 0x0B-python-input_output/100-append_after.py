@@ -10,15 +10,13 @@ def append_after(filename="", search_string="", new_string=""):
         search_string (str): The string to search
         new_string (str): The string to add
     """
-
-
     t = ""
 
     with open(filename) as s:
-        for l in s:
-            t += l
+        for line in s:
+            t += line
 
-            if search_string in l:
+            if search_string in line:
                 t += new_string
 
     with open(filename, "w") as wr:
